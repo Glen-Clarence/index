@@ -1,0 +1,31 @@
+# License
+
+Copyright (c) 2026 Hairline UI. All rights reserved.
+
+This license applies to every copy of Index obtained from Hairline UI, whether bought on its own, included with All-Access or downloaded free with an account.
+
+## You can
+
+- Use it for your own products and websites.
+- Use it for any number of client projects, and hand the finished site, including its source, to that client.
+- Change the code and design however you like.
+- Deploy the result commercially.
+
+## You can't
+
+- Resell, redistribute or share the template files, or a lightly modified copy of them, as a template, starter kit, theme, UI kit or component library, free or paid.
+- Publish the template's source in a public repository as a template.
+
+## Demo content
+
+The brand, people, companies, quotes, figures and prices in the demo are made up. Replace them before you launch, and don't present them as facts about a real business. Names of third-party products and services mentioned in the demo belong to their owners.
+
+The images and artwork that come with the template were made for it, and you may use them in sites you build with it (see `ASSETS.md`).
+
+## Third-party software
+
+Next.js, React and the other packages listed in `package.json`, the fonts and the icons keep their own open-source licenses (MIT, ISC and the SIL Open Font License).
+
+## No warranty
+
+The template is provided "as is", without warranty of any kind. Hairline UI is not liable for any damages arising from its use.
