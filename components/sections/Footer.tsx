@@ -11,9 +11,11 @@ export function Footer() {
           <span className="brand__dot">.</span>
         </a>
         <nav aria-label="Footer navigation">
+          <a href="#moments">Later</a>
           <a href="#how-it-works">How it works</a>
+          <a href="#asks">Ask</a>
           <a href="#examples">Explore</a>
-          <a href="#library">Library</a>
+          <a href="#start">Start</a>
           <a href="#privacy">Privacy</a>
           <a href="#pricing">Pricing</a>
           <a href={site.links.docs || "#questions"}>

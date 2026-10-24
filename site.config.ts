@@ -3,11 +3,11 @@ export const site = {
   meta: {
     title: "Index — Your internet memory, organized",
     description:
-      "Index turns bookmarks, videos, articles, repositories, and collections into one searchable personal library. Search by what you remember.",
+      "Index turns the bookmarks, videos, articles, and places you've saved into one library you can search the way you remember.",
   },
   links: { app: "", docs: "", email: "hello@example.com" },
   hero: {
-    badge: "Bookmarks. Videos. Articles. Repositories. Collections.",
+    badge: "Bookmarks. Videos. Articles. Places. Collections.",
     first: "Your internet memory,",
     accent: "organized.",
     description:
@@ -25,23 +25,23 @@ export const site = {
     kinds: [
       {
         name: "Bookmarks",
-        detail: "Your Chrome bookmarks, organized and searchable.",
+        detail: "Links you saved in your browser, ready to search.",
       },
       {
         name: "Videos",
-        detail: "YouTube videos you've saved, liked, and collected.",
+        detail: "Videos you liked, saved, or meant to watch later.",
       },
       {
         name: "Articles",
-        detail: "The pages you knew you'd need someday.",
+        detail: "Pages you knew you'd want again someday.",
       },
       {
-        name: "Repositories",
-        detail: "Saved GitHub projects and technical resources.",
+        name: "Places",
+        detail: "Restaurants, trips, shops, and spots you wanted to remember.",
       },
       {
         name: "Collections",
-        detail: "Saved Google content, in one library.",
+        detail: "Groups of things you already gathered in one place.",
       },
     ],
   },
@@ -49,7 +49,7 @@ export const site = {
     badge: "Search by what you remember",
     heading: "You don't need the title.\nJust describe it.",
     description:
-      "Index understands what you mean. A half-remembered video, article, or repository is enough.",
+      "Index understands what you mean. A half-remembered video, recipe, or article is enough.",
   },
   evidence: {
     badge: "Things you forgot you saved",
@@ -58,29 +58,158 @@ export const site = {
     description:
       "Thousands of bookmarks, videos, and articles. Describe what you need, and Index searches your whole library.",
   },
+  moments: {
+    badge: "Later always comes",
+    first: "You save it",
+    accent: "for a reason.",
+    description:
+      "A recipe for Thursday. A café for Saturday. A trip you meant to take. Index is there when later arrives.",
+    items: [
+      {
+        when: "Thursday evening",
+        title: "You want that pasta.",
+        body: "You saved the recipe, the video, and what to buy. You just need dinner, not a folder of cooking links.",
+      },
+      {
+        when: "Saturday morning",
+        title: "You have a few free hours.",
+        body: "A café by the park, a market two streets over, shops on the way home. One morning, saved on different days.",
+      },
+      {
+        when: "A long weekend",
+        title: "You finally have time to go.",
+        body: "The article, the walk, and the cafés you kept for a quiet trip. You don't need the title. You need the weekend.",
+      },
+      {
+        when: "A dim room",
+        title: "The corner still looks empty.",
+        body: "The plants that cope with low light, how often to water them, and the shop with the good pots.",
+      },
+      {
+        when: "The phone is full",
+        title: "You meant to watch that video.",
+        body: "Free some space, keep the photos, turn on the backup. One small job, split across three saves.",
+      },
+    ],
+  },
+  asks: {
+    badge: "Just describe it",
+    first: "Ask the way",
+    accent: "you remember.",
+    description:
+      "You don't need the title. You don't even need the exact words. A feeling, a place, or a half-remembered sentence is enough.",
+    items: [
+      {
+        ask: "That pasta recipe I saved for a weeknight.",
+        note: "Food · Recipe, video, shopping list",
+      },
+      {
+        ask: "The café I saved near the park.",
+        note: "Local · Place, market, walk home",
+      },
+      {
+        ask: "The article about a quiet weekend away.",
+        note: "Travel · Article, walk, cafés",
+      },
+      {
+        ask: "Something about plants that don't need much light.",
+        note: "Home · Article, watering, the shop",
+      },
+      {
+        ask: "That video about freeing space on my phone.",
+        note: "Tech · Video, photos, backup",
+      },
+      {
+        ask: "I definitely saved something about this...",
+        note: "Anytime · Across your whole library",
+      },
+    ],
+  },
+  begin: {
+    badge: "No folders to maintain",
+    first: "Just save things.",
+    accent: "We'll help later.",
+    description:
+      "No endless tagging. No cleanup day you never get to. Connect what you already use, keep saving as you do, and ask when you need something back.",
+    steps: [
+      {
+        label: "Connect",
+        title: "Bring in what you already saved.",
+        body: "Your browser, the videos you keep, the pages you meant to open again. Start with one place, or a few.",
+      },
+      {
+        label: "Save",
+        title: "Keep doing what you already do.",
+        body: "Bookmark a page. Save a video. Keep a place. Index gathers them so you don't have to file them.",
+      },
+      {
+        label: "Ask",
+        title: "Describe it when you need it.",
+        body: "A dinner, a Saturday, a trip, a full phone. Say what you remember, and Index finds the rest.",
+      },
+    ],
+    notes: [
+      "No folders to keep tidy.",
+      "No tags you have to remember.",
+      "No complicated setup.",
+    ],
+  },
+  privacy: {
+    badge: "Your library stays yours",
+    first: "Built around",
+    accent: "your privacy.",
+    description:
+      "What you save is personal. We treat it that way. Connect only the accounts you want. Leave whenever you want.",
+    items: [
+      {
+        title: "You choose what to connect",
+        body: "Start with bookmarks, or add videos, articles, and places. Nothing joins the library until you say so.",
+      },
+      {
+        title: "You can disconnect",
+        body: "Remove an account at any time. Index stops bringing things in from that place.",
+      },
+      {
+        title: "You can delete everything",
+        body: "Export your library, or remove it. Your personal knowledge should not become someone else's product.",
+      },
+      {
+        title: "This page stores nothing",
+        body: "The examples run in your browser. Nothing you click here is sent away or kept.",
+      },
+    ],
+  },
   examples: {
     badge: "Your saved content, connected",
     heading: "Topics find each other.\nEven years apart.",
     description:
-      "A few corners of a personal library. Choose one and search the way you'd actually remember it.",
+      "Food, local spots, trips, home, and everyday tech. Choose one and search the way you'd remember it.",
   },
   library: {
-    badge: "Your personal knowledge graph",
+    badge: "The things you care about",
     heading: "The more you save,\nthe more useful it becomes.",
     description:
-      "Every resource adds another piece. Over time, Index learns the topics and connections across your library.",
+      "A recipe, a trip, a video, a shop. Over time, Index notices how the things you've saved belong together.",
     trees: [
       {
-        name: "AI",
-        children: ["LLMs", "RAG", "Agents", "Computer Vision"],
+        name: "Food",
+        children: ["Recipes", "Baking", "Weeknight dinners", "Kitchen"],
       },
       {
-        name: "AWS",
-        children: ["EC2", "ECS", "Lambda", "Infrastructure"],
+        name: "Local",
+        children: ["Cafés", "Markets", "Shops", "Walks"],
       },
       {
-        name: "Development",
-        children: ["React", "TypeScript", "Docker", "System Design"],
+        name: "Travel",
+        children: ["Cities", "Weekends", "Walks", "Places to stay"],
+      },
+      {
+        name: "Home",
+        children: ["Plants", "Small repairs", "Rooms", "Things to buy"],
+      },
+      {
+        name: "Tech",
+        children: ["Phone", "Photos", "Backup", "Apps"],
       },
     ],
     careTitle: "Clean up your digital life",
@@ -100,14 +229,11 @@ export const site = {
         detail: "Things you saved years ago and never revisited.",
       },
       {
-        title: "Unorganized resources",
-        detail: "Content that doesn't belong to any collection.",
+        title: "Loose ends",
+        detail: "Things you saved and never put anywhere.",
       },
     ],
     careNote: "Review. Organize. Delete. You stay in control.",
-    privacyTitle: "Built around your privacy",
-    privacy:
-      "Your saved content is personal. Connect only the services you choose, disconnect whenever you want, and delete your data whenever you want. Your personal knowledge stays yours.",
   },
   pricing: {
     badge: "Start free",
@@ -126,8 +252,8 @@ export const site = {
       featured: false,
       mark: "",
       features: [
-        "Chrome bookmarks",
-        "Search by meaning",
+        "Bookmarks from your browser",
+        "Search the way you remember",
         "200 saved items",
         "Export or delete your data",
       ],
@@ -143,7 +269,7 @@ export const site = {
       featured: true,
       mark: "Full library",
       features: [
-        "YouTube, articles, GitHub, and Google",
+        "Videos, articles, places, and collections",
         "Unlimited saved items",
         "Topics, connections, and collections",
         "Broken links, duplicates, and forgotten items",
@@ -161,7 +287,7 @@ export const site = {
       mark: "",
       features: [
         "Everything in Library",
-        "A personal knowledge graph",
+        "See how your saves connect",
         "Cleanup across your whole library",
         "Full export and deletion",
       ],
@@ -175,12 +301,12 @@ export const site = {
       {
         question: "What can I bring into Index?",
         answer:
-          "Chrome bookmarks, YouTube videos, articles and web pages, GitHub repositories, and saved Google content. You connect only the services you choose. This page uses three prepared libraries so you can try search, connections, and saved items without an account.",
+          "Bookmarks, videos, articles, places, and collections you already keep. You connect only the accounts you want. This page has five sample libraries — food, local, travel, home, and tech — so you can try search without an account.",
       },
       {
         question: "How does search by meaning work?",
         answer:
-          "Describe what you remember — a topic, a half-remembered title, the reason you saved it. Index looks across your library for the closest resources. The searches on this page are prepared examples. Nothing you type here is sent to an AI service.",
+          "Describe what you remember: a dinner, a trip, a video, the reason you saved it. Index looks across your library for the closest things. The searches on this page are prepared examples. Nothing you type here is sent anywhere.",
       },
       {
         question: "Do I have to organize it myself?",
@@ -205,7 +331,7 @@ export const site = {
     ],
   },
   closing: {
-    badge: "Your second brain for the internet",
+    badge: "For everything you meant to come back to",
     first: "Stop saving.",
     accent: "Start remembering.",
     description:

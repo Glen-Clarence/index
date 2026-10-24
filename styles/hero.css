@@ -422,7 +422,7 @@
     font-size: 12px;
   }
   .scene-canvas::before {
-    content: "Bookmarks + Videos + Repositories";
+    content: "Bookmarks + Videos + Articles";
     font-family: var(--font-mono), monospace;
     font-size: 10px;
     display: block;

@@ -6,8 +6,8 @@ import { Mark } from "@/components/ui/Mark";
 import { Action } from "@/components/ui/Action";
 const links = [
   { href: "#how-it-works", label: "How it works" },
+  { href: "#asks", label: "Ask" },
   { href: "#examples", label: "Explore" },
-  { href: "#library", label: "Library" },
   { href: "#pricing", label: "Pricing" },
 ];
 export function Navigation() {

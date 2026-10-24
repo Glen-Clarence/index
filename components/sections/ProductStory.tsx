@@ -8,19 +8,19 @@ const chapters = [
   {
     label: "Save",
     heading: "One place for everything.",
-    body: "Bookmarks, videos, articles, repositories, and collections. Index brings what you have already saved into a single library.",
-    detail: "Chrome, YouTube, the web, GitHub, and Google.",
+    body: "Bookmarks, videos, articles, places, and collections. Index brings what you have already saved into a single library.",
+    detail: "Your browser, the videos you keep, and the pages you meant to open again.",
   },
   {
     label: "Search",
     heading: "Describe what you remember.",
-    body: "You don’t need the exact words. Ask for “that video explaining Redis clustering,” and Index looks for the meaning.",
+    body: "You don’t need the exact words. Ask for “that video about fixing a dripping tap,” and Index looks for what you mean.",
     detail: "A half-remembered title is enough to start.",
   },
   {
     label: "Connect",
     heading: "See what belongs together.",
-    body: "Saved things stay linked. Index finds the relationships between articles, videos, and repositories, including ones you saved years apart.",
+    body: "A recipe, a video, and a shop you saved months apart can belong to the same idea. Index finds those links for you.",
     detail: "Topics and collections, without folders to maintain.",
   },
 ];

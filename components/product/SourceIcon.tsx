@@ -1,8 +1,8 @@
 import {
   Bookmark,
   BookOpen,
-  FolderGit2,
   Layers,
+  MapPin,
   Play,
   type LucideIcon,
 } from "lucide-react";
@@ -12,7 +12,7 @@ const icons: Record<Source["kind"], LucideIcon> = {
   Bookmark,
   Video: Play,
   Article: BookOpen,
-  Repository: FolderGit2,
+  Place: MapPin,
   Collection: Layers,
 };
 

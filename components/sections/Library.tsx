@@ -19,7 +19,7 @@ export function Library() {
         <p>{site.library.description}</p>
       </div>
       <div className="library-layout">
-        <div className="graph-forest" aria-label="Sample knowledge graph">
+        <div className="graph-forest" aria-label="Topics in a sample library">
           {site.library.trees.map((tree) => (
             <div className="graph-tree" key={tree.name}>
               <h3>{tree.name}</h3>
@@ -44,10 +44,6 @@ export function Library() {
           </ul>
           <p className="care-note">{site.library.careNote}</p>
         </div>
-      </div>
-      <div id="privacy" className="privacy-band">
-        <h3>{site.library.privacyTitle}</h3>
-        <p>{site.library.privacy}</p>
       </div>
     </section>
   );

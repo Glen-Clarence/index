@@ -4,8 +4,8 @@ import { AccentReveal } from "@/components/motion/AccentReveal";
 import {
   Bookmark,
   BookOpen,
-  FolderGit2,
   Layers,
+  MapPin,
   Play,
   type LucideIcon,
 } from "lucide-react";
@@ -14,7 +14,7 @@ const kindIcons: Record<string, LucideIcon> = {
   Bookmarks: Bookmark,
   Videos: Play,
   Articles: BookOpen,
-  Repositories: FolderGit2,
+  Places: MapPin,
   Collections: Layers,
 };
 export function Introduction() {
