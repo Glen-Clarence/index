@@ -1,4 +1,5 @@
 import { MotionProvider } from "@/components/motion/MotionProvider";
+import { PageMotion } from "@/components/motion/PageMotion";
 import { ResearchProvider } from "@/components/product/ResearchProvider";
 import { Navigation } from "@/components/sections/Navigation";
 import { Hero } from "@/components/sections/Hero";
@@ -19,27 +20,29 @@ export default function Home() {
   return (
     <MotionProvider>
       <ResearchProvider>
-        <a className="skip-link" href="#main">
-          Skip to content
-        </a>
-        <div id="top" />
-        <Navigation />
-        <main id="main">
-          <Hero />
-          <Introduction />
-          <Moments />
-          <ProductStory />
-          <Asks />
-          <Evidence />
-          <Examples />
-          <Library />
-          <Begin />
-          <Privacy />
-          <Pricing />
-          <FAQ />
-          <Closing />
-        </main>
-        <Footer />
+        <PageMotion>
+          <a className="skip-link" href="#main">
+            Skip to content
+          </a>
+          <div id="top" />
+          <Navigation />
+          <main id="main">
+            <Hero />
+            <Introduction />
+            <Moments />
+            <ProductStory />
+            <Asks />
+            <Evidence />
+            <Examples />
+            <Library />
+            <Begin />
+            <Privacy />
+            <Pricing />
+            <FAQ />
+            <Closing />
+          </main>
+          <Footer />
+        </PageMotion>
       </ResearchProvider>
     </MotionProvider>
   );

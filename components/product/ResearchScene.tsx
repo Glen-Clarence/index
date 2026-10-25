@@ -1,5 +1,8 @@
 "use client";
+import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
+import { gsap, useGSAP } from "@/components/motion/gsap";
+import { useMotion } from "@/components/motion/MotionProvider";
 import { useResearch, useSurfaceSource } from "./ResearchProvider";
 import { SourceReader } from "./SourceReader";
 import { TopicSelector } from "./TopicSelector";
@@ -11,8 +14,54 @@ import { SourceConnections } from "./SourceConnections";
 export function ResearchScene() {
   const { topic, openSource } = useResearch();
   const { source: reading, closeSource } = useSurfaceSource("scene");
+  const { enabled } = useMotion();
+  const scene = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      if (!enabled || reading) return;
+      const cards = scene.current?.querySelectorAll(".source-fragment");
+      const paper = scene.current?.querySelector(".synthesis-paper");
+      if (!cards?.length) return;
+
+      gsap.fromTo(
+        cards,
+        { autoAlpha: 0, x: -22, rotation: -2 },
+        {
+          autoAlpha: 1,
+          x: 0,
+          rotation: 0,
+          duration: 0.7,
+          stagger: 0.1,
+          ease: "power3.out",
+        },
+      );
+      if (paper) {
+        gsap.fromTo(
+          paper,
+          { autoAlpha: 0, y: 18 },
+          { autoAlpha: 1, y: 0, duration: 0.7, delay: 0.18, ease: "power3.out" },
+        );
+      }
+      gsap.to(cards, {
+        y: -7,
+        duration: 2.8,
+        stagger: { each: 0.28, from: "end" },
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+        delay: 0.8,
+      });
+    },
+    { scope: scene, dependencies: [enabled, topic.id, reading] },
+  );
+
   return (
-    <div className="research-scene" aria-label="Interactive library preview">
+    <div
+      ref={scene}
+      className="research-scene"
+      aria-label="Interactive library preview"
+    >
       <div className="scene-toolbar">
         <span>
           <Mark />
